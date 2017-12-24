@@ -87,7 +87,7 @@ celerybeat-schedule
 venv/
 ENV/
 
-outlook/keys.py
+/keys.py
 
 # Spyder project settings
 .spyderproject
