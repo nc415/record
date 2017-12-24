@@ -8,7 +8,7 @@ from . import keys
 client_id = keys.client_id
 client_secret = keys.client_secret
 print(client_id,client_secret)
-
+print("test")
 # Constant strings for OAuth2 flow
 # The OAuth authority
 authority = 'https://login.microsoftonline.com'
