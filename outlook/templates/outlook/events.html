@@ -1,0 +1,21 @@
+{% extends "outlook/layout.html" %}
+{%  block content %}
+<h1> Your Upcoming Events </h1>
+<table class="table">
+	<tr>
+		<th>Subject</th>
+		<th>Start</th>
+		<th>End</th>
+		<th>Attendees </th>
+	</tr>
+
+	{% for event in events %}
+	<tr>
+		<td>{{event.subject}}</td>
+		<td>{{event.start.dateTime}} ({{event.start.timeZone}})</td>
+		<td>{{event.end.dateTime}} ({{event.end.timeZone}})</td>
+		<td>{{event.attendees}}</td>
+	</tr>
+	{% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "outlook/layout.html" %}
+{%  block content %}
+<h1> Your Email </h1>
+<table class="table">
+	<tr>
+		<th>From</th>
+		<th>Subject</th>
+		<th>Received Date</th>
+	</tr>
+
+	{% for messages in messages %}
+	<tr>
+		<td>{{messages.from.emailAddress.name}}</td>
+		<td>{{messages.subject}}</td>
+		<td>{{messages.receivedDateTime}}</td>
+	</tr>
+	{% endfor %}
+</table>
+{% endblock %}

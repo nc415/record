@@ -1,0 +1,10 @@
+{% extends "outlook/layout.html" %}
+{% block content"}
+<div class="jumbotron">
+	<h1> Python  Outlook Sample"</h1>
+	<p>This is an example of how to get oAuth token from Azure</p>
+	<p>
+	<a class="btn btn-lg btn-primary" href="{{signin_url}}" role="button" id="connect-button">Connect to Azure</a>
+	</p>
+</div>
+{% endblock %}
